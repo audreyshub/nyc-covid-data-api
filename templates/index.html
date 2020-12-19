@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+	<h2>{% block title %} Select Date {% endblock %}</h2>
+    <form action="/results" method="POST" autocomplete="off">
+        <div class="col-md-6">
+    		<div class="input-group date" data-provide="datepicker" data-date-format="yyyy-mm-dd" data-date-orientation="top" data-date-start-date="2020-02-29" data-date-end-date="2020-12-03">
+    			<input type="text" name="date" class="form-control date-withicon" placeholder="Select a date within 2/29 and 12/3"/>
+    			<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                <button type="submit" class="btn btn-primary">Submit</button>
+    		</div>
+        </div>
+    </form>
+</div>
+{% endblock %}

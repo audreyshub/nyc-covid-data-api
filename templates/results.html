@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>{% block title %} Results {% endblock %}</h2>
+    <p><b>Date:</b> <span class="cases">{{ results.date }}</span></p>
+    <p><b>Total Confirmed Cases:</b> <span class="cases">{{ results.cases }}</span></p>
+    <p><b>Total Hospitalized:</b> <span class="hospitalized">{{ results.hospitalized }}</span></p>
+    <p><b>Total Deaths:</b> <span class="deaths">{{ results.deaths }}</span></p>
+{% endblock %}
